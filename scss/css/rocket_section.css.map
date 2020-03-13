@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,kBAAU,CACN,IAAI,CACA,SAAS,CAAE,eAAc,CACzB,OAAO,CAAE,CAAC,CAGd,EAAE,CACE,OAAO,CAAE,CAAC,CACV,SAAS,CAAE,wBAAuB,EAG1C,UAAU,CAAV,iBAAU,CACN,IAAI,CACA,SAAS,CAAE,aAAa,CAE5B,EAAE,CACE,SAAS,CAAE,YAAY",
+    "sources": [
+        "../animation/rocket_section.scss"
+    ],
+    "names": [],
+    "file": "rocket_section.css"
+}

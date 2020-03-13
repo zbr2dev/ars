@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144.554" height="66.335" viewBox="0 0 144.554 66.335">
+  <g id="Group_167" data-name="Group 167" transform="translate(-568.25 -510.382)">
+    <g id="Group_148" data-name="Group 148" transform="translate(0 25)">
+      <g id="Group_147" data-name="Group 147" transform="translate(553.194 493.267)">
+        <g id="Group_38" data-name="Group 38" transform="translate(22.517 0)">
+          <path id="Path_37" data-name="Path 37" d="M2001.085,3938.112h129.086v50.567H2001.085Z" transform="translate(-2001.085 -3938.112)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_149" data-name="Group 149" transform="translate(569 510.742)">
+      <path id="Path_40" data-name="Path 40" d="M0-5.758V59.856" transform="translate(0 5.758)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+      <path id="Path_41" data-name="Path 41" d="M0,0V49.8" transform="translate(50.054 0.39) rotate(90)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+      <path id="Path_42" data-name="Path 42" d="M0,0V12.675" transform="translate(12.931 65.191) rotate(90)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+    </g>
+    <g id="Group_150" data-name="Group 150" transform="translate(662 510.742)">
+      <path id="Path_40-2" data-name="Path 40" d="M0,59.856V-5.758" transform="translate(50.054 5.758)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+      <path id="Path_41-2" data-name="Path 41" d="M0,0V49.8" transform="translate(0 65.225) rotate(-90)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+      <path id="Path_42-2" data-name="Path 42" d="M0,0V12.675" transform="translate(37.123 0.423) rotate(-90)" fill="#097ffd" stroke="#097ffd" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

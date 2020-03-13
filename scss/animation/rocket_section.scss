@@ -1,0 +1,19 @@
+@keyframes cosmonautStretchMd {
+    from {
+        transform: translate(0,0);
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(-200px,400px);
+    }
+  }
+@keyframes cosmonautMdRotate{
+    from{
+        transform: rotate(75deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+} 
