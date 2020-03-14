@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAA;EACd,cAAc,EAAE,qBAAqB;EACrC,kBAAkB,EAAE,EAAE;EACtB,mBAAmB,EAAE,QAAQ;EAC7B,yBAAyB,EAAE,IAAI;CAClC;;AACD,UAAU,CAAV,qBAAU;EAEN,GAAG;IACC,SAAS,EAAE,0BAA0B;IACrC,UAAU,EAAE,OAAO;;EAEvB,IAAI;IACA,SAAS,EAAE,oBAAoB",
+    "sources": [
+        "../animation/btn-bordered.scss"
+    ],
+    "names": [],
+    "file": "btn-bordered.css"
+}

@@ -65,6 +65,49 @@ p {
         background-color: #B9B9B9;
     }
 }
+.btn-next-container{
+    position: absolute;
+    left: calc(50% - 71px);
+    bottom: 0;
+    text-align: center;
+}
+.btn-bordered{
+    background-color: $main;
+    width: 130px;
+    height: 50.5px;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
+    position: relative;
+    border: 1px solid $main;
+    &::before{
+        content: " ";
+        position: absolute;
+        width: 50px;
+        height: 65px;
+        left: -8px;
+        background: url('../assets/btn_bordered_border_left.svg') no-repeat top center /contain;
+        top: calc(50% - 32.5px);
+    }
+    &::after{
+        content: " ";
+        position: absolute;
+        width: 50px;
+        height: 65px;
+        right: -8px;
+        background: url('../assets/btn_bordered_border-right.svg') no-repeat top center /contain;
+        top: calc(50% - 32.5px);
+    }
+}
+.btn-next-line{
+    margin: 0 auto;
+    margin-top: 16.5px;
+    width: 1px;
+    height: 50px;
+    display: block;
+    background-color: #B9B9B9;
+}
+
 .btn-plus-circle{
     width: 35px;
     height: 35px;
@@ -180,6 +223,7 @@ body {
     position: relative;
     &-content{
         position: relative;
+        top: -50px;
         .images-container{
             width: 100%;
             height: 100%;
@@ -195,16 +239,20 @@ body {
                 animation-duration: 4s;
                 margin: 0 auto;
                 animation-fill-mode: forwards;
+                animation-delay: 1s;
                 transition: ease-in-out .6s background-color;
-                //animation-name: cosmonautStretch;
+
                 img{
+                    opacity: 0;
                     animation-fill-mode: forwards;
                     position: absolute;
                     animation-duration: 4s;
+                    animation-delay: 1s;
                 }
                 .name, button{
                     opacity: 0;
                     animation-name: cosmonautContentAppearing;
+                    animation-delay: 1s;
                     animation-duration: 4s;
                     animation-fill-mode: forwards;
                 }
@@ -231,29 +279,22 @@ body {
                     z-index: 100;
                 }
             }
-            .img-container.opened{
-                //max-width: 470px!important;
-                padding: 50px 30px 20px;
-                background-color: #eeeeee;
-                display: flex;
-                button{
-                    position: absolute;
-                    margin-right: 0;
-                }
-                img,.desc{
-                    position: unset;
-                }
 
-            }
             .img-container.sm{
                 max-width: 250px;
                 animation-name: cosmonautStretchSm;
                 img{
                     left: calc(50% - 55px);
+                    animation-name: cosmonautRotateSm;
                 }
                 button{
                     margin-left: auto;
                     margin-right: 40px;
+                    position: absolute;
+                    right: 0;
+                }
+                .name{
+                    padding-top: 30px;
                 }
             }
             .img-container.md{
@@ -265,28 +306,74 @@ body {
                 }
                 button{
                     margin-left: 25px;
+                    position: absolute;
+                    //left: unset!important;
+                }
+                .name{
+                    padding-top: 35px;
                 }
             }
             .img-container.lg{
                 animation-name: cosmonautStretchLg;
-                max-width: 272px;
+                max-width: 220px;
+                //direction: rtl;
                 img{
                     transform: rotate(195deg);
                     animation-name: cosmonautRotateLg;
                     top: calc(50% - 115px);
-                    left: 5%;
+                    left: calc(50% - 90px);
                 }
                 button{
+                    position: absolute;
+                    right: 15px;
+                    
                     margin-left: auto;
                     margin-right: 25px;
                     margin-top: 2px;
                 }
+            }
+            .img-container.opened{
+                //max-width: 470px!important;
+                padding: 50px 30px 20px;
+                background-color: #eeeeee;
+                display: flex;
+                button{
+                    left: inherit;
+                    position: absolute;
+                    margin-right: 0;
+                }
+                .desc{
+                    position: unset;
+                }
+                img{
+                    margin-right: 15px;
+                }
+                .name{
+                    padding-top: 0;
+                }
+
+            }
+            .img-container.lg.opened{
+                padding-left: 180px;
+            }
+            .img-container.md.opened{
+                padding-left: 180px;
+                button{
+                    left: unset!important;
+                    margin-left: 0;
+                }
+            }
+            .img-container.sm.opened{
+                padding-left: 120px;
             }
         }
         .rocket-img{
             display: block;
             margin: 0 auto ;
         }
+    }
+    .btn-bordered{
+        transform: translate3d(0, -2000px, 0);
     }
 }
 

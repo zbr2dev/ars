@@ -3,64 +3,93 @@
         transform: translate(0,0) scale(.4);
         opacity: 0;
     }
-    80%{
+    65%{
         opacity: 1;
-        transform: translate(-200px,200px) scale(1);
+        transform: translate(-200px,130px) scale(1);
+    }
+    85%{
+        transform: translate(-200px,130px) scale(1);
     }
     100% {
-        transform: translate(-220px,180px);
+        transform: translate(-210px,80px);
     }
   }
 @keyframes cosmonautRotateMd{
-    from{
+    0%{
         transform: rotate(75deg);
     }
-    to{
+    65%{
         transform: rotate(0deg);
+        opacity: 1;
+    }
+    85%{
+        transform: rotate(5deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(0);
+        opacity: 1;
     }
 } 
-@keyframes consmonautRotateLg{
-    // 0%{
-    //     opacity: 0;
-    //     transform: translate(0,0) scale(.4);
-    // }
-    // 80%{
-    //     opacity: 1;
-    //     transform: translate(150px) scale(1);
-    // }
+@keyframes cosmonautRotateLg{
+     0%{
+         opacity: 0;
+     }
+     65%{
+         opacity: 1;
+     }
+     100%{
+         opacity: 1;
+     }
 }
 @keyframes cosmonautStretchLg{
     0%{
         opacity: 0;
-        transform: translate(30%,-20%) scale(.4);
+        transform: translate(0px,0px) scale(.4);
+    }
+    65%{
+        opacity: 1;
+        transform: translate(420px, 140px) scale(1);
+    }
+    85%{
+        transform: translate(410px,130px);   
     }
     100%{
-        opacity: 1;
-        transform: translate(420px, 200px) scale(1);
+        transform: translate(435px,120px);
     }
 }
 @keyframes cosmonautRotateSm{
-    from{
-        transform: rotate();
+    0%{
+        transform: rotate(-15deg);
     }
-    to{
-        transform: rotate();
+    65%{
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
     }
 }
 @keyframes cosmonautStretchSm{
     0% {
         opacity: 0;
-        transform: translate(50%,0);
+        transform: translate(50%,0) scale(.4);
+    }
+    65%{
+        opacity: 1;
+        transform: translate(450px,35px) scale(1);
+    }
+    85%{
+        transform: translate(445px,35px);
     }
     100%{
-        opacity: 1;
-        transform: translate(200%,25%);
+        transform: translate(465px,35px);
     }
 
 }
 
 @keyframes cosmonautContentAppearing{
-    80%{
+    85%{
         opacity: 0;
         transform: scale(.3);
         

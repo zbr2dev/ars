@@ -1,17 +1,56 @@
+.customSlideInDown {
+  -webkit-animation-name: customSlideInDownAnim;
+          animation-name: customSlideInDownAnim;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes customSlideInDownAnim {
+  85% {
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes customSlideInDownAnim {
+  85% {
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 @-webkit-keyframes cosmonautStretchMd {
   0% {
     -webkit-transform: translate(0, 0) scale(0.4);
             transform: translate(0, 0) scale(0.4);
     opacity: 0;
   }
-  80% {
+  65% {
     opacity: 1;
-    -webkit-transform: translate(-200px, 200px) scale(1);
-            transform: translate(-200px, 200px) scale(1);
+    -webkit-transform: translate(-200px, 130px) scale(1);
+            transform: translate(-200px, 130px) scale(1);
+  }
+  85% {
+    -webkit-transform: translate(-200px, 130px) scale(1);
+            transform: translate(-200px, 130px) scale(1);
   }
   100% {
-    -webkit-transform: translate(-220px, 180px);
-            transform: translate(-220px, 180px);
+    -webkit-transform: translate(-210px, 80px);
+            transform: translate(-210px, 80px);
   }
 }
 
@@ -21,111 +60,205 @@
             transform: translate(0, 0) scale(0.4);
     opacity: 0;
   }
-  80% {
+  65% {
     opacity: 1;
-    -webkit-transform: translate(-200px, 200px) scale(1);
-            transform: translate(-200px, 200px) scale(1);
+    -webkit-transform: translate(-200px, 130px) scale(1);
+            transform: translate(-200px, 130px) scale(1);
+  }
+  85% {
+    -webkit-transform: translate(-200px, 130px) scale(1);
+            transform: translate(-200px, 130px) scale(1);
   }
   100% {
-    -webkit-transform: translate(-220px, 180px);
-            transform: translate(-220px, 180px);
+    -webkit-transform: translate(-210px, 80px);
+            transform: translate(-210px, 80px);
   }
 }
 
 @-webkit-keyframes cosmonautRotateMd {
-  from {
+  0% {
     -webkit-transform: rotate(75deg);
             transform: rotate(75deg);
   }
-  to {
+  65% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
   }
 }
 
 @keyframes cosmonautRotateMd {
-  from {
+  0% {
     -webkit-transform: rotate(75deg);
             transform: rotate(75deg);
   }
-  to {
+  65% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes consmonautRotateLg {}
+@-webkit-keyframes cosmonautRotateLg {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-@keyframes consmonautRotateLg {}@-webkit-keyframes cosmonautStretchLg {
+@keyframes cosmonautRotateLg {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0%, 0%) scale(0.4);
-            transform: translate(0%, 0%) scale(0.4);
   }
-  80% {
+  65% {
     opacity: 1;
-    -webkit-transform: translate(85%, 85%) scale(1);
-            transform: translate(85%, 85%) scale(1);
   }
-}@keyframes cosmonautStretchLg {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cosmonautStretchLg {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0%, 0%) scale(0.4);
-            transform: translate(0%, 0%) scale(0.4);
+    -webkit-transform: translate(0px, 0px) scale(0.4);
+            transform: translate(0px, 0px) scale(0.4);
   }
-  80% {
+  65% {
     opacity: 1;
-    -webkit-transform: translate(85%, 85%) scale(1);
-            transform: translate(85%, 85%) scale(1);
+    -webkit-transform: translate(420px, 140px) scale(1);
+            transform: translate(420px, 140px) scale(1);
+  }
+  85% {
+    -webkit-transform: translate(410px, 130px);
+            transform: translate(410px, 130px);
+  }
+  100% {
+    -webkit-transform: translate(435px, 120px);
+            transform: translate(435px, 120px);
+  }
+}
+
+@keyframes cosmonautStretchLg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 0px) scale(0.4);
+            transform: translate(0px, 0px) scale(0.4);
+  }
+  65% {
+    opacity: 1;
+    -webkit-transform: translate(420px, 140px) scale(1);
+            transform: translate(420px, 140px) scale(1);
+  }
+  85% {
+    -webkit-transform: translate(410px, 130px);
+            transform: translate(410px, 130px);
+  }
+  100% {
+    -webkit-transform: translate(435px, 120px);
+            transform: translate(435px, 120px);
   }
 }
 
 @-webkit-keyframes cosmonautRotateSm {
-  from {
-    -webkit-transform: rotate();
-            transform: rotate();
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
   }
-  to {
-    -webkit-transform: rotate();
-            transform: rotate();
+  65% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes cosmonautRotateSm {
-  from {
-    -webkit-transform: rotate();
-            transform: rotate();
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
   }
-  to {
-    -webkit-transform: rotate();
-            transform: rotate();
+  65% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes cosmonautStretchSm {
-  from {
-    -webkit-transform: translate();
-            transform: translate();
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(50%, 0) scale(0.4);
+            transform: translate(50%, 0) scale(0.4);
   }
-  to {
-    -webkit-transition: translate();
-    transition: translate();
+  65% {
+    opacity: 1;
+    -webkit-transform: translate(450px, 35px) scale(1);
+            transform: translate(450px, 35px) scale(1);
+  }
+  85% {
+    -webkit-transform: translate(445px, 35px);
+            transform: translate(445px, 35px);
+  }
+  100% {
+    -webkit-transform: translate(465px, 35px);
+            transform: translate(465px, 35px);
   }
 }
 
 @keyframes cosmonautStretchSm {
-  from {
-    -webkit-transform: translate();
-            transform: translate();
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(50%, 0) scale(0.4);
+            transform: translate(50%, 0) scale(0.4);
   }
-  to {
-    -webkit-transition: translate();
-    transition: translate();
+  65% {
+    opacity: 1;
+    -webkit-transform: translate(450px, 35px) scale(1);
+            transform: translate(450px, 35px) scale(1);
+  }
+  85% {
+    -webkit-transform: translate(445px, 35px);
+            transform: translate(445px, 35px);
+  }
+  100% {
+    -webkit-transform: translate(465px, 35px);
+            transform: translate(465px, 35px);
   }
 }
 
 @-webkit-keyframes cosmonautContentAppearing {
-  80% {
+  85% {
     opacity: 0;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
@@ -138,7 +271,7 @@
 }
 
 @keyframes cosmonautContentAppearing {
-  80% {
+  85% {
     opacity: 0;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
@@ -148,5 +281,20 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.delay-2s {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.delay-3s {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 /*# sourceMappingURL=main.css.map */

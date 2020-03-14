@@ -1,0 +1,16 @@
+.customSlideInDown{
+    animation-name: customSlideInDownAnim;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes customSlideInDownAnim{
+    
+    85% {
+        transform: translate3d(0, -2000px, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
