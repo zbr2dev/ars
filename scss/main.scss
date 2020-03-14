@@ -479,7 +479,21 @@ textarea:focus{
 
 textarea::-moz-placeholder { color: #000; }
 ::-webkit-input-placeholder { color: #000; }
-
+.bg-rocket{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 500%;
+        height: 500%;
+        top: -205%;
+        left: -50%;
+    }
+}
 
 @media (min-width:$mobile){
     .map-section{

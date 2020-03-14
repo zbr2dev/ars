@@ -864,6 +864,23 @@ textarea::-moz-placeholder {
   color: #000;
 }
 
+.bg-rocket {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.bg-rocket img {
+  position: relative;
+  width: 500%;
+  height: 500%;
+  top: -205%;
+  left: -50%;
+}
+
 @media (min-width: 425px) {
   .map-section-content::before {
     width: 467px;
